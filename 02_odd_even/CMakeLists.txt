@@ -1,5 +1,5 @@
 # set minimum required cmake version 
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION "3.0")
 
 # create variable containing project name
 set(PROJECT_NAME "02_odd_even")
