@@ -3,8 +3,22 @@
 bool isArmstrongNumber(int number)
 {
 	// TODO: implement some functionality to see if this number is an armstrong number
+	int copyNumber = number;
+	int rezultat = 0;
+	while (number / 10 != 0)
+	{
+		int index = number % 10 ;
+		rezultat = rezultat + pow(index, 3);
+		number = number / 10;
+		
+	}
 
-	return false;
+	if (copyNumber = rezultat) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 void printIsArmstrong(int number)
@@ -19,7 +33,7 @@ void printIsArmstrong(int number)
 	}
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	// What is this program expected to do?
 	// - Shows whether an argument is an armstrong number.
@@ -50,9 +64,10 @@ int main(int argc, char *argv[])
 	int readNumber = 0;
 	// Get the first argument
 	std::string argumentAsString = argv[1];
-	
+	const char* argumentAsCharArray = argumentAsString.c_str();
 	// TODO: read number / cast to integer
-
+	readNumber = atoi(argv[1]);
 	printIsArmstrong(readNumber);
+	
 	return 0;
 }
