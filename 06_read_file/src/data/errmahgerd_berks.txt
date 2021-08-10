@@ -1,0 +1,4 @@
+Titlu 1
+Autor 1
+Titlu 2
+Autor 2 
